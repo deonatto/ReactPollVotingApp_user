@@ -1,0 +1,225 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  margin:0; 
+  padding:0; 
+  width: 100%; 
+  height: 100%;
+}
+
+/* General styling*/
+#root{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+/* login form */
+.login-container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightsteelblue;
+  overflow-x: auto;
+}
+.login-title-container h1{
+  width: 100%;
+  padding-bottom: 5px;
+}
+.message-container h4{
+  color: red;
+}
+.login-form-container {
+  padding-top: 5px;
+  width: 35%;
+  overflow-x: auto;
+  
+}
+.login-form-forgot {
+  float: right;
+}
+.ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.login-form-button {
+  width: 100%;
+}
+
+/* main container of home,results and vote pages*/
+.main-home-container{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  overflow-x: auto;
+}
+/*  Home page styling -(table, jumbotron) */
+.btable{
+  top: 195px;
+  margin: 0;
+  padding-right:0; 
+  padding-left: 15px;
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+  overflow-x: auto;
+  
+}
+
+.jumbo-container{
+  top:60px;
+  margin:0;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 60px;
+  width: 95% !important;
+  height: 200px !important;
+  position: absolute;
+}
+.jumbo-title-container{
+  display: flex !important;
+  padding-bottom: 3rem !important;
+  align-items: center;
+}
+.jumbo-title-container h3{
+  color:rgb(236, 119, 73);
+  
+}
+
+/*  navBar */
+.navBar{
+  width: 100%;
+  height: 60px;
+  background-color:rgb(236, 119, 73);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.navBar .links{
+  max-height: 80px;
+}
+
+.navBar .links a{
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* update user page and password page */
+.main-container{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  overflow-x: auto;
+}
+
+.update-main-container, .pass-main-container{
+  top: 80px;
+  bottom: 0;
+  margin: 0;
+  padding:0;
+  width: 100%;
+  height: 80%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.update-form-container, .pass-form-container {
+  overflow: auto !important;
+  padding-top: 5px;
+  width: 30%;
+ 
+}
+
+.update-message-container {
+  padding-top: 5px;
+}
+
+.update-message-container h4{
+  color: red;
+}
+
+
+.pass-form-container {
+  width: 35%;
+}
+
+
+/* Results page and vote page  */
+
+.results-table{
+  top: 90px;
+  margin: 0;
+  padding-right:0; 
+  padding-left: 15px;
+  width: 99% !important;
+  position: absolute;
+  bottom: 0;
+  overflow-x: auto;
+
+}
+
+.votes-table{
+  top: 100px;
+  margin: 0;
+  padding-right:0; 
+  padding-left: 15px;
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+  overflow-x: auto;
+
+}
+
+.vote-message-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.vote-message-container h4{
+  color: red;
+
+}
+@media only screen and (max-width: 780px){
+  .navBar .leftSide .links a{
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .jumbo-container{
+    display: none !important;
+  }
+  .btable{
+    top: 90px;
+  }
+
+  .update-form-container {
+    width: 80%;
+   
+  }
+}
